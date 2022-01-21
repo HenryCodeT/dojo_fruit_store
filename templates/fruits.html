@@ -2,6 +2,7 @@
 <head>
     <title>Dojo Fruit Store Assignment</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='img/apple.png') }}">
 </head>
 <body>
 
@@ -22,14 +23,41 @@
       <main role="main">
   
         <section class="jumbotron text-center">
-          <div class="container">
-            <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
+          <h1 class="jumbotron-heading">Dojo Fruits</h1>
+          <div class="container row justify-content-center mr-auto ml-auto">
+            <!-- card 1-->
+            <div class="card col-3 m-2" style="width: 18rem;">
 
-            <p>
-              <a href="/" class="btn btn-primary my-2">Go back</a>
-            </p>
+              <img src="{{ url_for('static', filename='img/apple.png') }}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <!-- card 1-->
+            <div class="card col-3 m-2" style="width: 18rem;">
+              <img src="{{ url_for('static', filename='img/blackberry.png') }}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <!-- card 1-->
+            <div class="card col-3 m-2" style="width: 18rem;">
+              <img src="{{ url_for('static', filename='img/raspberry.png') }}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
+            <!-- card 1-->
+            <div class="card col-3 m-2" style="width: 18rem;">
+              <img src="{{ url_for('static', filename='img/strawberry.png') }}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+              </div>
+            </div>
           </div>
+          <p>
+            <a href="/" class="btn btn-primary my-2">Go back</a>
+          </p>
         </section>
   
       </main>
